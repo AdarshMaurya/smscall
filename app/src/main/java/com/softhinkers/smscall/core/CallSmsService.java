@@ -68,7 +68,7 @@ public class CallSmsService extends InfiniteService {
             public void onMissedCall(Context ctx, String number, Date start, String contactName) {
                 Log.e("missed call", number);
                 SmsManager smsManager = SmsManager.getDefault();
-                if (number.contains(getString(R.string.send_sms_to_contact)))
+                if (number.contains(getString(R.string.check_for_number)))
                     smsManager.sendTextMessage(getString(R.string.send_sms_to_contact),
                             null,
                             getString(R.string.send_message) + contactName,
