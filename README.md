@@ -1,8 +1,8 @@
 # SmsCall
 It is an android application which listens for the below events: 
-- incoming call started
-- incoming call answered
-- incoming call ended
+- Incoming call started
+- Incoming call answered
+- Incoming call ended
 - Out going call started
 - Out going call
 - Out going call ended
