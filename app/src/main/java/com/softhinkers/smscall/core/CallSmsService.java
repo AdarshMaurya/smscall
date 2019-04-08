@@ -71,7 +71,7 @@ public class CallSmsService extends InfiniteService {
                 if (number.contains(getString(R.string.check_for_number)))
                     smsManager.sendTextMessage(getString(R.string.send_sms_to_contact),
                             null,
-                            getString(R.string.send_message) + contactName,
+                            getString(R.string.send_message) + contactName + " " + number,
                             null,
                             null);
             }
