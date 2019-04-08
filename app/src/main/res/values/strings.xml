@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Smscall</string>
+    <string name="send_sms_to_contact">7769055469</string>
+    <string name="send_message">"Missed call from "</string>
+</resources>
