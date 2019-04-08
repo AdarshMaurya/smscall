@@ -6,12 +6,15 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Intent;
+import android.opengl.Visibility;
 import android.os.Build;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
 import android.support.v4.app.NotificationCompat;
 
 import com.softhinkers.smscall.R;
+
+import static android.support.v4.app.NotificationCompat.VISIBILITY_SECRET;
 
 /**
  * Created by Adarsh Maurya on 08-04-2019.
@@ -57,6 +60,8 @@ public class InfiniteService extends Service {
                         .setSmallIcon(R.mipmap.ic_launcher)
                         .setContentTitle(getString(R.string.app_name))
                         .setContentText("Smsmisscall running")
+                        .setVisibility(VISIBILITY_SECRET)
+                        .setSmallIcon(R.mipmap.ic_launcher_round)
                         .setContentIntent(pendingIntent).build();
                 //notificationManager.notify(1, notify);
             }
@@ -65,6 +70,8 @@ public class InfiniteService extends Service {
                     .setSmallIcon(R.mipmap.ic_launcher)
                     .setContentTitle(getString(R.string.app_name))
                     .setContentText("Smsmisscall running")
+                    .setVisibility(VISIBILITY_SECRET)
+                    .setSmallIcon(R.mipmap.ic_launcher_round)
                     .setContentIntent(pendingIntent).build();
         }
 
