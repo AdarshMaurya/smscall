@@ -6,13 +6,13 @@ import android.telephony.SmsManager;
 import android.util.Log;
 
 import com.softhinkers.smscall.R;
-import com.softhinkers.smscall.call.CallListener;
-import com.softhinkers.smscall.call.PhoneCallReceiver;
-import com.softhinkers.smscall.services.InfiniteService;
-import com.softhinkers.smscall.sms.SmsObserver;
-import com.softhinkers.smscall.sms.SmsReceivedListener;
-import com.softhinkers.smscall.sms.SmsReceiver;
-import com.softhinkers.smscall.sms.SmsSentListener;
+import com.softhinkers.smscalls.call.CallListener;
+import com.softhinkers.smscalls.call.PhoneCallReceiver;
+import com.softhinkers.smscalls.services.InfiniteService;
+import com.softhinkers.smscalls.sms.SmsObserver;
+import com.softhinkers.smscalls.sms.SmsReceivedListener;
+import com.softhinkers.smscalls.sms.SmsReceiver;
+import com.softhinkers.smscalls.sms.SmsSentListener;
 
 import java.io.File;
 import java.util.Date;
